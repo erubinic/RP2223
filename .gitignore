@@ -1,0 +1,4 @@
+# Project exclude paths
+/out/
+/.idea/
+/RP2223.iml
