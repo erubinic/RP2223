@@ -7,6 +7,7 @@ public class ItdFinalResults {
     Integer firstSeminar;
     Integer secondSeminar;
     Integer activity;
+
     Integer pointsBeforeFinalExam;
     Integer finalPoints;
     Grade grade;
@@ -52,5 +53,11 @@ public class ItdFinalResults {
         grade = Grade.fromPoints(finalPoints);
 
         return this;
+    }
+
+    public static void main(String[] args) {
+        ItdFinalResults finalResults = new ItdFinalResults(5, 5, 5);
+
+        finalResults.addTotalAndGrade();
     }
 }

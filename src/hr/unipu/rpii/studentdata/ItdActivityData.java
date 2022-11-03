@@ -37,7 +37,7 @@ public class ItdActivityData {
         activities.add(new ItdActivity(26, 26, 6));
     }
 
-    public Set<ItdActivity> getActivities() {
+    public static Set<ItdActivity> getActivities() {
         return activities;
     }
 }

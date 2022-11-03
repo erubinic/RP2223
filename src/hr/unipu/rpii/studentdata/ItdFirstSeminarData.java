@@ -37,7 +37,7 @@ public class ItdFirstSeminarData {
         seminars.add(new ItdFirstSeminar(26, 26, 7, 7, 8, 9, 7, 7));
     }
 
-    public Set<ItdFirstSeminar> getSeminars() {
+    public static Set<ItdFirstSeminar> getSeminars() {
         return seminars;
     }
 }

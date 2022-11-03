@@ -38,11 +38,9 @@ public class ResultsServiceImpl implements ItdResultsService {
     }
 
     private Integer resolveActivity(Student student) {
-        return null; // TODO: find student activity
-                /*Optional.ofNullable(student.getItdActivity())
+        return Optional.ofNullable(student.getItdActivity())
                 .map(ItdActivity::getActivity)
                 .orElse(null);
-                */
     }
 
 }

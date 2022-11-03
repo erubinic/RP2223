@@ -10,10 +10,15 @@ public class StudentData {
 
     static {
         for (int id = 1; id < 27; id++)
-            students.add(new Student(id, String.valueOf(id*10)));
+            students.add(new Student(id, String.valueOf(id * 10)));
     }
 
     public static Set<Student> getStudents() {
         return students;
+    }
+
+    public static void main(String[] args) {
+        for (Student student : students)
+            System.out.println(student);
     }
 }
