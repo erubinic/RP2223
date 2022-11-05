@@ -1,4 +1,4 @@
-package hr.unipu.rpii.enums;
+package hr.unipu.rpii.calculator.enums;
 
 
 import java.util.stream.Stream;

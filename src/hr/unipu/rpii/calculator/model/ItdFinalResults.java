@@ -1,6 +1,6 @@
-package hr.unipu.rpii.model;
+package hr.unipu.rpii.calculator.model;
 
-import hr.unipu.rpii.enums.Grade;
+import hr.unipu.rpii.calculator.enums.Grade;
 
 
 public class ItdFinalResults {

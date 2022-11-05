@@ -1,7 +1,7 @@
-package hr.unipu.rpii;
+package hr.unipu.rpii.calculator;
 
 
-import hr.unipu.rpii.model.ItdResultResponse;
+import hr.unipu.rpii.calculator.model.ItdResultResponse;
 
 public interface ItdResultsService {
 

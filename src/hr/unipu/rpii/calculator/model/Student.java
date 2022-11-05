@@ -1,8 +1,8 @@
-package hr.unipu.rpii.model;
+package hr.unipu.rpii.calculator.model;
 
-import hr.unipu.rpii.studentdata.ItdActivityData;
-import hr.unipu.rpii.studentdata.ItdFirstSeminarData;
-import hr.unipu.rpii.studentdata.ItdSecondSeminarData;
+import hr.unipu.rpii.calculator.studentdata.ItdActivityData;
+import hr.unipu.rpii.calculator.studentdata.ItdFirstSeminarData;
+import hr.unipu.rpii.calculator.studentdata.ItdSecondSeminarData;
 
 public class Student {
     private int id;

@@ -1,4 +1,4 @@
-package hr.unipu.rpii.model;
+package hr.unipu.rpii.calculator.model;
 
 abstract class ItdSeminar {
     private int Id;

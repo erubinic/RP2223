@@ -1,6 +1,6 @@
-package hr.unipu.rpii.studentdata;
+package hr.unipu.rpii.calculator.studentdata;
 
-import hr.unipu.rpii.model.Student;
+import hr.unipu.rpii.calculator.model.Student;
 
 import java.util.HashSet;
 import java.util.Set;
