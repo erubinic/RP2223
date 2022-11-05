@@ -1,5 +1,9 @@
 package hr.unipu.rpii.model;
 
+import hr.unipu.rpii.studentdata.ItdActivityData;
+import hr.unipu.rpii.studentdata.ItdFirstSeminarData;
+import hr.unipu.rpii.studentdata.ItdSecondSeminarData;
+
 public class Student {
     private int id;
 
@@ -21,14 +25,52 @@ public class Student {
     }
 
     public ItdFirstSeminar getFirstSeminar() {
-        return null; // TODO: find first seminar
+        ItdFirstSeminar result = null;
+        for (ItdFirstSeminar seminar : ItdFirstSeminarData.getSeminars()) {
+            if(seminar.getStudentId() == id) {
+                result = seminar;
+                break;
+            }
+        }
+        if(result == null)
+            throw new RuntimeException("Can't find first seminar for student with id:" + id);
+
+        return result;
     }
 
     public ItdSecondSeminar getSecondSeminar() {
-        return null; // TODO: implement
+        ItdSecondSeminar result = null;
+        for (ItdSecondSeminar seminar : ItdSecondSeminarData.getSeminars()) {
+            if(seminar.getStudentId() == id) {
+                result = seminar;
+                break;
+            }
+        }
+        if(result == null)
+            throw new RuntimeException("Can't find second seminar for student with id:" + id);
+
+        return result;
     }
 
     public ItdActivity getItdActivity() {
-        return null;// TODO: implement
+        ItdActivity result = null;
+        for (ItdActivity activity : ItdActivityData.getActivities()) {
+            if(activity.getStudentId() == id) {
+                result = activity;
+                break;
+            }
+        }
+        if(result == null)
+            throw new RuntimeException("Can't find activity for student with id:" + id);
+
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", jmbag='" + jmbag + '\'' +
+                '}';
     }
 }

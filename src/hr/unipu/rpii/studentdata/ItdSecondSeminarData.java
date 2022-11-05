@@ -37,7 +37,7 @@ public class ItdSecondSeminarData {
         seminars.add(new ItdSecondSeminar(26, 26, 6, 8, 9, 14, null));
     }
 
-    public Set<ItdSecondSeminar> getSeminars() {
+    public static Set<ItdSecondSeminar> getSeminars() {
         return seminars;
     }
 }
