@@ -11,7 +11,8 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <mssql.version>11.2.1.jre17</mssql.version>
+        <mssql.version>9.5.0.jre17-preview</mssql.version>
+        <spring-jdbc.version>5.3.13</spring-jdbc.version>
     </properties>
 
     <dependencies>
@@ -19,6 +20,12 @@
             <groupId>com.microsoft.sqlserver</groupId>
             <artifactId>mssql-jdbc</artifactId>
             <version>${mssql.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${spring-jdbc.version}</version>
         </dependency>
     </dependencies>
     
