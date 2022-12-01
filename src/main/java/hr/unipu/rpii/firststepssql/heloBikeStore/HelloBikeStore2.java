@@ -16,6 +16,7 @@ public class HelloBikeStore2 {
         sqlDs.setPassword("1234");
         sqlDs.setDatabaseName("BikeStores");
         sqlDs.setPortNumber(1433);
+        sqlDs.setEncrypt(false);
 
         try (Connection conn = sqlDs.getConnection()) {
             Statement statement = conn.createStatement();

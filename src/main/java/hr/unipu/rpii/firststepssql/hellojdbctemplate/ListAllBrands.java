@@ -9,7 +9,7 @@ public class ListAllBrands {
     public static void main(String[] args) {
         SimpleDriverDataSource dataSource = new SimpleDriverDataSource();
         dataSource.setDriver(new com.microsoft.sqlserver.jdbc.SQLServerDriver());
-        dataSource.setUrl("jdbc:sqlserver://localhost:1433;database=BikeStores;");
+        dataSource.setUrl("jdbc:sqlserver://localhost:1433;databaseName=BikeStores;encrypt=false;");
         dataSource.setUsername("rpuser");
         dataSource.setPassword("1234");
 
