@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: "jdbc:sqlserver://localhost:1433;databaseName=HERE WRITE DBNAME;encrypt=false;"
+    url: "jdbc:sqlserver://localhost:1433;databaseName=UnipuResults;encrypt=false;"
     username: rpuser
     password: 1234
     driverClassName: "com.microsoft.sqlserver.jdbc.SQLServerDriver"
