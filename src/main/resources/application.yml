@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: "jdbc:sqlserver://localhost:1433;databaseName=HERE WRITE DBNAME;encrypt=false;"
+    username: rpuser
+    password: 1234
+    driverClassName: "com.microsoft.sqlserver.jdbc.SQLServerDriver"
+  jpa:
+    show-sql: false
+    hibernate:
+      dialect: org.hibernate.dialect.SQLServerDialect
+  main:
+    web-environment: true
+  liquibase:
+    change-log: classpath:db.changelog/db.changelog-production.yaml
+
+
+
