@@ -1,4 +1,4 @@
-package hr.unipu.rpii.backendfinaly;
+package hr.unipu.rpii.backendfinally;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
