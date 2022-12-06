@@ -5,7 +5,7 @@ import com.sun.istack.NotNull;
 import javax.persistence.*;
 
 @Entity
-@Table(schema = "results", name = "ItdFirstSeminar")
+@Table(schema = "results", name = "ItdSecondSeminar")
 public class ItdSecondSeminar {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

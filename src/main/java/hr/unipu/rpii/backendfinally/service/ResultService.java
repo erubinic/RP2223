@@ -1,7 +1,7 @@
 package hr.unipu.rpii.backendfinally.service;
 
-import hr.unipu.rpii.backendfinally.model.result.ItdFirstSeminar;
+import hr.unipu.rpii.backendfinally.service.model.ItdResultResponse;
 
 public interface ResultService {
-    ItdFirstSeminar getResultsByJmbag(String jmbag);
+    ItdResultResponse getItdResultsByJmbag(String jmbag);
 }
