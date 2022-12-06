@@ -4,9 +4,7 @@
 
 SET IDENTITY_INSERT student.Student ON;
 
-INSERT INTO student.Student
-(Id, Jmbag, Name, Surname)
-VALUES
+INSERT INTO student.Student (Id, Jmbag, Name, Surname) VALUES
 (1, '1111111', 'Dylan', 'Byrd'),
 (2, '2222222', 'Jade', 'Boyd'),
 (3, '3333333', 'Paulo', 'Blanchard'),
