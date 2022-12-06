@@ -1,4 +1,4 @@
-package hr.unipu.rpii.backendfinally.repo.student;
+package hr.unipu.rpii.backendfinally.repo.result;
 
 import hr.unipu.rpii.backendfinally.model.result.ItdFirstSeminar;
 import hr.unipu.rpii.backendfinally.model.student.Student;

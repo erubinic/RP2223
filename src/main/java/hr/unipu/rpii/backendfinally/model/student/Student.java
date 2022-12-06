@@ -37,4 +37,9 @@ public class Student {
     public String getSurname() {
         return surname;
     }
+
+    /*
+    @OneToOne(fetch = FetchType.EAGER, mappedBy="student")
+    private ItdActivity itdActivity;
+     */
 }

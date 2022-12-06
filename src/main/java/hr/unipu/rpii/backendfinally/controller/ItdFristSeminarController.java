@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/first")
+@RequestMapping("itd/first")
 public class ItdFristSeminarController {
     private final ResultService resultService;
 

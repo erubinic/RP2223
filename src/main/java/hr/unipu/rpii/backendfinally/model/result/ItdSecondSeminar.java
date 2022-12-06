@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(schema = "results", name = "ItdFirstSeminar")
-public class ItdFirstSeminar {
+public class ItdSecondSeminar {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
@@ -22,10 +22,7 @@ public class ItdFirstSeminar {
 
     private Integer quality;
 
-    @Column(name = "Size")
-    private Integer quantity;
-
-    private Integer formatting;
+    private Integer negativePoints;
 
     public int getId() {
         return id;
@@ -51,11 +48,7 @@ public class ItdFirstSeminar {
         return quality;
     }
 
-    public Integer getQuantity() {
-        return quantity;
-    }
-
-    public Integer getFormatting() {
-        return formatting;
+    public Integer getNegativePoints() {
+        return negativePoints;
     }
 }

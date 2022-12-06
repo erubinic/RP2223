@@ -2,7 +2,7 @@ package hr.unipu.rpii.backendfinally.service.impl;
 
 import hr.unipu.rpii.backendfinally.model.result.ItdFirstSeminar;
 import hr.unipu.rpii.backendfinally.providers.StudentProvider;
-import hr.unipu.rpii.backendfinally.repo.student.ItdFirstSeminarRepository;
+import hr.unipu.rpii.backendfinally.repo.result.ItdFirstSeminarRepository;
 import hr.unipu.rpii.backendfinally.service.ResultService;
 import org.springframework.stereotype.Service;
 
@@ -23,8 +23,8 @@ public class ResultServiceImpl implements ResultService {
         if (student != null) {
             return itdFirstSeminarRepository.findByStudentId(student.getId())
                     .orElseGet(null);
-        }
-        else
+        } else {
             return null;
+        }
     }
 }
