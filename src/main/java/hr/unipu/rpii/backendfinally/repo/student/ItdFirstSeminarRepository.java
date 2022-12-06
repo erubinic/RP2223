@@ -7,5 +7,5 @@ import org.springframework.data.repository.CrudRepository;
 import java.util.Optional;
 
 public interface ItdFirstSeminarRepository extends CrudRepository<ItdFirstSeminar, Integer> {
-    Optional<ItdFirstSeminar> findByStudentid(int studentId);
+    Optional<ItdFirstSeminar> findByStudentId(int studentId);
 }

@@ -5,14 +5,14 @@ import com.sun.istack.NotNull;
 import javax.persistence.*;
 
 @Entity
-@Table(schema = "results", name = "First")
+@Table(schema = "results", name = "ItdFirstSeminar")
 public class ItdFirstSeminar {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     int id;
 
     @NotNull
-    int studentid;
+    int studentId;
 
     Integer presDesign;
     Integer presContent;

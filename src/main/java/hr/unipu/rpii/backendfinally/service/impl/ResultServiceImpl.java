@@ -21,7 +21,7 @@ public class ResultServiceImpl implements ResultService {
         var student = studentProvider.getByJmbag(jmbag);
 
         if (student != null) {
-            return itdFirstSeminarRepository.findByStudentid(student.getId())
+            return itdFirstSeminarRepository.findByStudentId(student.getId())
                     .orElseGet(null);
         }
         else
