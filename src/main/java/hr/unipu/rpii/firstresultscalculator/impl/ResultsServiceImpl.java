@@ -1,10 +1,10 @@
-package hr.unipu.rpii.impl;
+package hr.unipu.rpii.firstresultscalculator.impl;
 
 
 
-import hr.unipu.rpii.ItdResultsService;
-import hr.unipu.rpii.model.*;
-import hr.unipu.rpii.studentdata.StudentData;
+import hr.unipu.rpii.firstresultscalculator.ItdResultsService;
+import hr.unipu.rpii.firstresultscalculator.model.*;
+import hr.unipu.rpii.firstresultscalculator.studentdata.StudentData;
 
 import java.util.Optional;
 

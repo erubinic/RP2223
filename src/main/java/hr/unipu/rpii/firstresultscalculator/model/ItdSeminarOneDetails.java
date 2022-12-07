@@ -1,4 +1,4 @@
-package hr.unipu.rpii.model;
+package hr.unipu.rpii.firstresultscalculator.model;
 
 public class ItdSeminarOneDetails {
     private static final int MAX_ACTUAL_POINTS = 25;

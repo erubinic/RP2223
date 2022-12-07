@@ -1,8 +1,8 @@
-package hr.unipu.rpii;
+package hr.unipu.rpii.firstresultscalculator;
 
-import hr.unipu.rpii.impl.ResultsServiceImpl;
-import hr.unipu.rpii.model.Student;
-import hr.unipu.rpii.studentdata.StudentData;
+import hr.unipu.rpii.firstresultscalculator.impl.ResultsServiceImpl;
+import hr.unipu.rpii.firstresultscalculator.model.Student;
+import hr.unipu.rpii.firstresultscalculator.studentdata.StudentData;
 
 import java.util.Comparator;
 import java.util.stream.Collectors;
