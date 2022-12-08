@@ -1,8 +1,11 @@
 package hr.unipu.rpii.backendfinally.service.model;
 
 
+import lombok.RequiredArgsConstructor;
+
 import java.util.stream.Stream;
 
+@RequiredArgsConstructor
 public enum Grade {
     A(5, 90),
     B(4, 80),
@@ -12,11 +15,6 @@ public enum Grade {
 
     final int numericGrade;
     final int minimumPoints;
-
-    Grade(int numericGrade, int minimumPoints) {
-        this.numericGrade = numericGrade;
-        this.minimumPoints = minimumPoints;
-    }
 
     public static Grade fromPoints(int points) {
         return Stream.of(Grade.values())

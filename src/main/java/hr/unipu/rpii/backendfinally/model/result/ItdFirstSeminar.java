@@ -1,10 +1,12 @@
 package hr.unipu.rpii.backendfinally.model.result;
 
 import com.sun.istack.NotNull;
+import lombok.Getter;
 
 import javax.persistence.*;
 
 @Entity
+@Getter
 @Table(schema = "results", name = "ItdFirstSeminar")
 public class ItdFirstSeminar {
     @Id
@@ -26,36 +28,4 @@ public class ItdFirstSeminar {
     private Integer quantity;
 
     private Integer formatting;
-
-    public int getId() {
-        return id;
-    }
-
-    public int getStudentId() {
-        return studentId;
-    }
-
-    public Integer getPresDesign() {
-        return presDesign;
-    }
-
-    public Integer getPresContent() {
-        return presContent;
-    }
-
-    public Integer getPresLive() {
-        return presLive;
-    }
-
-    public Integer getQuality() {
-        return quality;
-    }
-
-    public Integer getQuantity() {
-        return quantity;
-    }
-
-    public Integer getFormatting() {
-        return formatting;
-    }
 }

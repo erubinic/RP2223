@@ -9,20 +9,18 @@ import hr.unipu.rpii.backendfinally.service.model.ItdFinalResults;
 import hr.unipu.rpii.backendfinally.service.model.ItdResultResponse;
 import hr.unipu.rpii.backendfinally.service.model.ItdSeminarOneDetails;
 import hr.unipu.rpii.backendfinally.service.model.ItdSeminarTwoDetails;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
 @Service
+@RequiredArgsConstructor
+@Slf4j
 public class ResultServiceImpl implements ResultService {
     private final StudentProvider studentProvider;
     private final ItdProvider itdProvider;
-
-    public ResultServiceImpl(StudentProvider studentProvider, ItdProvider itdProvider) {
-        this.studentProvider = studentProvider;
-        this.itdProvider = itdProvider;
-    }
-
 
     @Override
     public ItdResultResponse getItdResultsByJmbag(String jmbag) {
@@ -39,7 +37,7 @@ public class ResultServiceImpl implements ResultService {
             response.setActivity(resolveActivity(student));
             response.setFinalResults(ItdFinalResults.fromItdFinalResponse(response));
         } catch (Exception ex) {
-           System.err.println("Error getting ITD results for jmbag: " + jmbag + " " + ex.getMessage());
+            log.error("Error getting ITD results for jmbag: {} ", jmbag, ex);
             response.setError(ex.getMessage());
         }
 

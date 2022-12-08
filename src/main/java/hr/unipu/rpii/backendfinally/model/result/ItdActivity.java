@@ -1,9 +1,12 @@
 package hr.unipu.rpii.backendfinally.model.result;
 
+import lombok.Getter;
+
 import javax.persistence.*;
 
 @Entity
 @Table(schema = "results", name = "ItdActivity")
+@Getter
 public class ItdActivity {
     @javax.persistence.Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -12,18 +15,6 @@ public class ItdActivity {
     private int studentId;
 
     private int activity;
-
-    public int getId() {
-        return Id;
-    }
-
-    public int getStudentId() {
-        return studentId;
-    }
-
-    public int getActivity() {
-        return activity;
-    }
 
     /*
     @OneToOne(fetch = FetchType.EAGER)

@@ -12,11 +12,11 @@ spring:
         # Spring by default uses org.springframework.boot.orm.jpa.SpringNamingStrategy
         #which splits camel case names with underscore. I DON'T WANT THAT
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-
   main:
     web-environment: true
   liquibase:
-    change-log: classpath:db.changelog/db.changelog-production.yaml
+    enabled: true
+    change-log: db.changelog-master.yaml
 
 
 
