@@ -2,11 +2,13 @@ package hr.unipu.rpii.backendfinally.model.student;
 
 
 import com.sun.istack.NotNull;
+import lombok.Getter;
 
 import javax.persistence.*;
 
 @Entity
 @Table(schema="student", name="Student")
+@Getter
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -21,22 +23,6 @@ public class Student {
 
     @NotNull
     String surname;
-
-    public int getId() {
-        return id;
-    }
-
-    public String getJmbag() {
-        return jmbag;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
 
     /*
     @OneToOne(fetch = FetchType.EAGER, mappedBy="student")

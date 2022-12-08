@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- logger na STDOUT -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</Pattern>
+        </encoder>
+    </appender>
+
+    <logger name="LOGGER-STDOUT" level="TRACE"/>
+
+    <root level="info">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+    <property name="LAST_LOG" value="logs/out.log"/>
+    <!-- logger u datoteku -->
+    <appender name="ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LAST_LOG}</file>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>logs/archived/app.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+            <!-- maks velicina 1 KB -->
+            <maxFileSize>1KB</maxFileSize>
+            <!-- izbrisi arhive starije od 7 dana -->
+            <maxHistory>7</maxHistory>
+            <!-- kad ukupna kolicina prijede 5KB izbrisi najstarije arhive  -->
+            <totalSizeCap>5KB</totalSizeCap>
+        </rollingPolicy>
+
+        <encoder>
+            <Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</Pattern>
+        </encoder>
+    </appender>
+
+    <logger name="testniLogger" level="debug">
+        <appender-ref ref="ROLLING"/>
+    </logger>
+
+    <root level="info">
+        <appender-ref ref="ROLLING"/>
+    </root>
+</configuration>
