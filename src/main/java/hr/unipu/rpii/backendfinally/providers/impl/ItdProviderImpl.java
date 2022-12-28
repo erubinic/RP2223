@@ -3,10 +3,10 @@ package hr.unipu.rpii.backendfinally.providers.impl;
 import hr.unipu.rpii.backendfinally.model.result.ItdActivity;
 import hr.unipu.rpii.backendfinally.model.result.ItdFirstSeminar;
 import hr.unipu.rpii.backendfinally.model.result.ItdSecondSeminar;
-import hr.unipu.rpii.backendfinally.providers.ItdProvider;
 import hr.unipu.rpii.backendfinally.repo.result.ItdActivityRepository;
 import hr.unipu.rpii.backendfinally.repo.result.ItdFirstSeminarRepository;
 import hr.unipu.rpii.backendfinally.repo.result.ItdSecondSeminarRepository;
+import hr.unipu.rpii.backendfinally.providers.ItdProvider;
 import org.springframework.stereotype.Component;
 
 @Component

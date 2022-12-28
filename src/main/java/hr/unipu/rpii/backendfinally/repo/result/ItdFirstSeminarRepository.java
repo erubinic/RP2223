@@ -1,7 +1,6 @@
 package hr.unipu.rpii.backendfinally.repo.result;
 
 import hr.unipu.rpii.backendfinally.model.result.ItdFirstSeminar;
-import hr.unipu.rpii.backendfinally.model.student.Student;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;

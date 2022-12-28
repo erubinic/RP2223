@@ -1,7 +1,7 @@
 package hr.unipu.rpii.backendfinally.providers.impl;
 
-import hr.unipu.rpii.backendfinally.model.student.Student;
 import hr.unipu.rpii.backendfinally.repo.student.StudentRepository;
+import hr.unipu.rpii.backendfinally.model.student.Student;
 import hr.unipu.rpii.backendfinally.providers.StudentProvider;
 import org.springframework.stereotype.Service;
 

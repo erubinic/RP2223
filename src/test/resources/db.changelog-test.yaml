@@ -1,5 +1,5 @@
 databaseChangeLog:
-  - inlcudeAll:
+  - includeAll:
       path: classpath:changelogs
   - includeAll:
       path: classpath:test-changelogs
